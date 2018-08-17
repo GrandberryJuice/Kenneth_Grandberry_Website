@@ -8,6 +8,8 @@ const portfolio = require('./routes/portfolio.js')
 const resume = require('./routes/resume.js')
 const contact = require('./routes/contact.js')
 
+app.use(express.static('public'))
+
 app.use(home)
 app.use(blog)
 app.use(portfolio)
