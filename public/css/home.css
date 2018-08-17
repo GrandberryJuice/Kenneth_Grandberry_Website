@@ -3,22 +3,31 @@ body {
 }
 
 /***********************NAVIGATION HEADER******************/
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
 
+    /* the rest of your styling */
+}
 /* needed to override bootstrap */
 .header-nav-block {
     display: inline-block;
     overflow: hidden;
     white-space:nowrap;
+    width: 100%;
 }
 
 ul, li {
     float: right !important;
+    display: inline-block;
 }
 
 .typewriter {
-    color:white;
+    color:black;
     font-family: monospace;
-    font-size: 30px;
+    font-size: 25px;
+    display: inline-block;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
@@ -32,7 +41,7 @@ ul, li {
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 80% }
   }
   
   /* The typewriter cursor effect */
