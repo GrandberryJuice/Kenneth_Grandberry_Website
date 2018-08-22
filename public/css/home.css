@@ -1,3 +1,7 @@
+* {
+    font-family: sans-serif;
+}
+
 body {
     background-color: white;    
 }
@@ -7,9 +11,10 @@ body {
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
-
+    margin-bottom: 2px;
     /* the rest of your styling */
 }
+
 /* needed to override bootstrap */
 .header-nav-block {
     display: inline-block;
@@ -21,15 +26,23 @@ body {
 ul, li {
     float: right !important;
     display: inline-block;
+    color: #7FB045;
+}
+
+a {
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
 }
 
 .typewriter {
-    color:black;
-    font-family: monospace;
-    font-size: 25px;
+    padding-left: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
     display: inline-block;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
+    border-right: .15em solid #e8d763; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
@@ -41,11 +54,81 @@ ul, li {
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 80% }
+    to { width: 20% }
   }
   
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange }
+    50% { border-color: #e8d763 }
   }
+
+  .padding {
+      padding-top: 20px;
+  }
+
+  .spotlight-image {
+      background-image: url('/images/loveForprogramming.jpg');
+      height: 95%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  /***************** About-Section *******************/
+
+.personal-photo {
+    border-radius:50%;
+    width: 240px;
+    height:230px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-me {
+    padding-top: 25px;
+    margin-left: auto;
+    margin-right:auto;
+    width: 20em;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+}
+
+.section-padding {
+    padding-top: 60px;
+}
+
+.blog-section {
+    background-color: white;
+    height: 300px;
+}
+
+.contact-section {
+    /* background-color:#58dd11; */
+    /* background-color: #ea2828; */
+    background-color: #ff0e36;
+    height:300px;
+}
+
+.social-section {
+    background-color: black;
+    height:100px;
+}
+
+/********************* portfolio-section **************************/
+
+.portfolio-section {
+    /*background-color: #ea2828;*/
+    /* background-color: #d4d4d4; */
+    background-color: #346be3;
+    height: 300px;
+}
+
+.portfolio-title {
+    color:white;
+    text-align: center;
+    font-weight: 300;   
+    font-size:35px;
+}
