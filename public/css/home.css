@@ -106,8 +106,6 @@ a {
 }
 
 .contact-section {
-    /* background-color:#58dd11; */
-    /* background-color: #ea2828; */
     background-color: #ff0e36;
     height:300px;
 }
@@ -120,10 +118,8 @@ a {
 /********************* portfolio-section **************************/
 
 .portfolio-section {
-    /*background-color: #ea2828;*/
-    /* background-color: #d4d4d4; */
     background-color: #346be3;
-    height:800px;
+    /* height:100%; */
 }
 
 .portfolio-title {
@@ -133,12 +129,61 @@ a {
     font-size:35px;
 }
 
-.image-container {
-    width:700px;
-    height: 500px;
+.first-portfolio-app {
+    height:70%;
+    width: 100%;
 }
 
-.image-container img {
+.second-portfolio-app {
+    box-sizing: border-box;
+    width: 100%;
+    height:70%;
+}
+
+.third-portfolio-app {
+    box-sizing:border-box;
+    width: 100%;
+    height: 70%;
+}
+
+.portfolio-container {
+  float:left;
+  width: 50%;  
+}
+
+.portfolio-image-container {
+    width:700px;
+    height: 500px;
+    margin: auto;
+}
+
+.portfolio-image-container img {
     width: 100%;
     height: auto;
+}
+
+#first-portfolio-section p {
+    float: left;
+}
+
+#second-portfolio-section p {
+    float: right;
+}
+
+.portfolio-container p {
+    padding: 100px;
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    width: 75%;
+}
+
+@media only screen and ( max-width: 600px) {
+    .portfolio-container {
+        width: 100%;
+    }
+
+    .portfolio-image-container img {
+        width:100%;
+    }
 }
